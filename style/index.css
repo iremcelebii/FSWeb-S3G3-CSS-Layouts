@@ -181,6 +181,7 @@ main a {
   border: solid white;
   padding: 0.25rem;
   font-size: 1.5rem;
+  text-align: center;
 }
 main h1 {
   font-size: 3rem;
@@ -272,4 +273,74 @@ nav a:hover {
 }
 section a {
   text-decoration: none;
+}
+
+main h1,
+main h2 {
+  text-align: center;
+}
+
+body {
+  min-width: 360px;
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem 2rem;
+    align-items: center;
+  }
+  header p {
+    margin-bottom: 0.25rem;
+    text-align: center;
+  }
+  header a {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border: solid black;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+  }
+
+  section {
+    padding: 1rem 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .section-img1,
+  .section-img2,
+  .section-img3,
+  .section-img4,
+  .section-img5,
+  .section-img6 {
+    width: 43vw;
+    height: 33vh;
+    min-width: 150px;
+    margin-bottom: 0.5rem;
+
+    margin-bottom: 0.5rem;
+  }
+
+  main div {
+    width: 81vw;
+    height: 37vh;
+    min-width: 294px;
+  }
+
+  section h2 {
+    margin-bottom: 3rem;
+  }
 }
